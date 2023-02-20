@@ -17,13 +17,15 @@ $y = 7;
 <br> <?= $x ?> * <?= $y ?> = <?= $x*$y ?>
 <br> <?= $x ?> / <?= $y ?> = <?= $x/$y ?>
 <br> <?= $x ?> % <?= $y ?> = <?= $x%$y ?> </p>
+-->
 
-ESERCIZIO 3
+<!-- ESERCIZIO 3 -->
 
 <?php 
 $variabile = 8;
 ?>
 
+<!-- 
 <p>
 Il valore adesso è <?= $variabile ?>. 
 <br> Somma 2. Il valore adesso è <?= $variabile += 2?>.
@@ -33,7 +35,6 @@ Il valore adesso è <?= $variabile ?>.
 <br> Incrementa il valore di un'unità. Il valore adesso è <?= $variabile++ ?>.
 <br> Decrementa il valore di un'unità. Il valore adesso è <?= $variabile--?>.
 </p>
-
 -->
 
 <!-- ESERCIZIO 4 -->
@@ -63,5 +64,26 @@ for($ciclo; $ciclo <= 12; $ciclo++){
  //echo "<li> {$ciclo} * {$ciclo} = " . $ciclo*$ciclo . "</li>";
 } ?>
 </ul>
+
+<!-- ESERCIZIO 7 -->
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <?php for($i=1;$i<=7;$i++) 
+	{ 
+		//echo '<tr>'; 
+		for($j=1;$j<=7;$j++) 
+		{ 
+			//echo "<td>" . $i*$j . "</td>"; 
+		} 
+		//echo '</tr>'; 
+	} ?>
+</table>
+
+<!-- VAR_DUMP -->
+
+<?php 
+$a = array(1,2, array("a", "b", "c"));
+var_dump($a);
+?>
 
 
